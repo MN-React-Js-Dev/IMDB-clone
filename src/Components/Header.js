@@ -2,6 +2,7 @@ import React from 'react'
 import ImDbLogo from '../Assets/Images/imdbLogo.svg'
 import ImDbProLogo from '../Assets/Images/ImdbPro.svg'
 import { BsBookmarkPlus } from "react-icons/bs";
+import { FiMenu } from "react-icons/fi";
 
 const Header = () => {
     return (
@@ -16,7 +17,12 @@ const Header = () => {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#" style={{ color: "white" }}><FiMenu /> Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#" style={{ color: "white" }}>
+                                    <input type="text" className='form-control col-' placeholder='Search IMDb ' />
+                                </a>
                             </li>
                         </ul>
                         <form class="d-flex " role="search">
@@ -28,10 +34,10 @@ const Header = () => {
                                     <BsBookmarkPlus /> watchList
                                 </li>
                                 <li class="nav-item">
-                                  SignIn
+                                    SignIn
                                 </li>
                                 <li class="nav-item">
-                                  En
+                                    En
                                 </li>
                             </ul>
                         </form>

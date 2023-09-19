@@ -1,4 +1,12 @@
-.cst-form{
+body {
+  color: white;
+}
+
+.bg-body-tertiary {
+  background-color: black !important;
+}
+
+.cst-form {
   display: flex;
   gap: 20px;
 }
